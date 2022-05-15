@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=,initial-scale-1.0">
+        <title>后赤壁赋</title>
+    </head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'STFangsong';
+        }
+        .shell{
+            height:100vh;
+            overflow-x:hidden;
+            perspective:3px;
+        }
+        .shell div{
+            position:relative;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-style:30px;
+            letter-spacing:2px;
+        }
+        .image{
+            transform:translateZ(-1px) scale(1.6);
+            background-size:cover;
+            height:100vh;
+            z-index:-1;
+        }
+        .text{
+            height:50vh;
+            background-color:#fff;
+        }
+        .text h1{
+            color:#000;
+            text-align:center;
+            
+        }
+        .heading{
+            z-index:-1;
+            transform:translateY(-30vh) translateZ(1px); /* 视差关键代码*/
+            color:#fff;
+            font-size:30px;
+        }
+
+    </style>
+    <body>
+        <div class="shell">
+            <div class="image" style="background-image:url('./images/1.jpg');"></div>
+            <div class="heading">
+                <h1>雪堂夜话</h1>
+            </div>
+            <div class="text">
+                <h1>是岁十月之望，步自雪堂，将归于临皋。</h1>
+            </div>
+
+            <div class="image" style="background-image:url('./images/2.jpg');"></div>
+            <div class="heading">
+                <h1>黄泥之坂</h1>
+            </div>
+            <div class="text">
+                <h1>二客从予过黄泥之坂。霜露既降，木叶尽脱，人影在地，仰见明月，顾而乐之，行歌相答。</h1>
+            </div>
+
+            <div class="image" style="background-image:url('./images/3.jpg');"></div>
+            <div class="heading">
+                <h1>复游赤壁</h1>
+            </div>
+            <div class="text">
+                <h1>于是携酒与鱼，复游于赤壁之下。 江流有声，断岸千尺；山高月小，水落石出。</h1>
+            </div>
+
+            <div class="image" style="background-image:url('./images/4.jpg');"></div>
+            <div class="heading">
+                <h1>复游赤壁</h1>
+            </div>
+            <div class="text">
+                <h1>划然长啸，草木震动，山鸣谷应，风起水涌。予亦悄然而悲，肃然而恐，凛乎其不可留也。</h1>
+            </div>
+        </div>
+    </body>
+</html>
