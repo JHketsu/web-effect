@@ -1,2 +1,5 @@
-web开发各种网页的练习
-每个文件存储一类
+web开发各种网页效果的练习
+
+
+ParallexScrolling - 滚动视差
+InfoCard - 个人信息卡
