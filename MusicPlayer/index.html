@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Custom Music Player</title>
+        <!--Font Awesome Icons-->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&famliy=Roboto+Mono&display=swap" rel="stylesheet"/>
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="music-player">
+            <!--playlist-->
+            <button id="playlist">
+                <i class="fa fa-angle-down"></i>
+            </button>
+            <!--song-image-->
+            <img id="song-image" src="./make-me-move.jpg">
+            <!--song-details-->
+            <div class="song-details">
+                <p id="song-name">Make Me Love</p>
+                <p id="song-artist">Old Song</p>
+            </div>
+            <!--player-options-->
+            <div class="player-options">
+                <button id="shuffle">
+                    <i class="fa fa-arrows-alt"></i>
+                </button>
+                <button id="prev">
+                    <i class="fa fa-step-backward"></i>
+                </button>
+                <button id="play">
+                    <i class="fa fa-play"></i>
+                </button>
+                <button id="pause" class="hide">
+                    <i class="fa fa-pause"></i>
+                </button>
+                <button id="next">
+                    <i class="fa fa-step-forward"></i>
+                </button>
+                <button id="repeat">
+                    <i class="fa fa-repeat"></i>
+                </button>
+            </div>
+            <audio id="audio" preload="metadata"></audio>
+            <!--progress-bar-->
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
+            <!--time-->
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="max-duration">0:00</span>
+            </div>
+            <!--playlist-hide-->
+            <div id="playlist-container" class="hide">
+                <button id="close-button">
+                    <i class="fa fa-close"></i>
+                </button>
+                <ul id="playlist-songs"></ul>
+            </div>
+        </div>
+        <!--Script-->
+        <script src="script.js"></script>
+    </body>
+</html>
